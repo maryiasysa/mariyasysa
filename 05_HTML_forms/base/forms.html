@@ -211,7 +211,8 @@
                                 <div>Телефонный номер в формате</div>
                                 <div>+ХХХ-ХХ-ХХХХХХХ, где Х - любое число</div>
                                 <label>
-                                    <input type="tel" name="tel" placeholder="+375-29-1234567" pattern="+[0-9]{3}-[0-9]{2}-[0-9]{7}">
+                                    <input type="tel" name="tel" placeholder="+375-29-1234567"
+                                           pattern="^(\+375|80)-(29|25|44|33)-(\d{3})(\d{2})(\d{2})$">
                                 </label>
                                 <br>
                                 <input type="submit" value="Проверить">
