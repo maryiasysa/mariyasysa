@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Title</title>
+            <style>
+                .flex {
+                    background-color: #eee;
+                    display: flex;
+                    flex-direction: row;
+                }
+                .navigation {
+                    width: 15em;
+                    min-width: 15em;
+                    background-color: #ccc;
+                    float: left;
+                }
+                .article{
+                    background-color: #aaa;
+                    margin-bottom: .2em;
+                    padding-top: 5px;
+                }
+                .bottom {
+                    width: 100%;
+                    background-color: #ccc;
+                }
+                table {
+                    width: 100%;
+                }
+            </style>
+        </head>
+        <!-- main contain-->
+        <body>
+            <div class="flex">
+                <!--block_of_navigation-->
+                <div>
+                    <div class="navigation">
+                        <h3>Блок навигации</h3>
+                        <ul>
+                            <li>Ширина 15em</li>
+                            <li>Должен присутствовать цвет фона</li>
+                            <li>Располагается слева</li>
+                            <li>Блок навигации наполните контентом достаточным,
+                                что бы по высоте он начинал захватывать вторую статью,
+                                как показанно в данном примере
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--article_01-->
+                <div class="article">
+                <div class="article">
+                    <h3>Статья 1</h3>
+                    <div>Размер блока</div>
+                    <div>Занимает всю доступную ширину</div>
+                    <div>Должен присутствовать цвет фона</div>
+                    <div>Во всех "статьях" сделайте отступ снизу от соседей равным 2em,
+                        при помощи свойства margin-bottom
+                    </div>
+                </div>
+                <!--article_02-->
+                <div class="article">
+                    <h3>Статья 2</h3>
+                    <div>Размер блока</div>
+                    <div>Занимает всю доступную ширину</div>
+                    <div>Должен присутствовать цвет фона</div>
+                    <div>Во всех "статьях" сделайте отступ снизу от соседей равным 2em,
+                        при помощи свойства margin-bottom. Картинка вставлена при помощи тега,
+                        плавание оргнизовано по правому краю внутри данной статьи для этой картинки.
+                    </div>
+                    <table>
+                        <tr>
+                            <td align="right">
+                                <img src="../images/icon_mail.png" class="article" alt="mail">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                </div>
+            </div>
+            <!--bottom-->
+            <div class="bottom">
+                Нижний блок, подвал. Занимает всю доступную ширину.
+                Высота определяется помещенным внутрь контентом.
+            </div>
+        </body>
+    </html>
