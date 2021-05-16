@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <title>DATA</title>
+            <style>
+                /*Границы таблицы*/
+                table{
+                    width: 700px;
+                    border-collapse: collapse;
+                    border: 1px solid grey;
+                }
+                th, td {
+                    border-collapse: collapse;
+                    border: 1px solid crimson;
+                }
+                /*Стиль таблицы*/
+                tr.head{
+                    background-color: gray;
+                }
+                tr.g{
+                    background-color: #aaaaaa;
+                }
+                tr.w{
+                    background-color: white;
+                }
+                tr.w, tr.g{
+                    text-align: left;
+                }
+                /*Подпись таблицы*/
+                caption {
+                    caption-side: bottom;
+                }
+                /*Изменение стиля при наведении курсора*/
+                th:hover, td:hover{
+                    background: coral;
+                    cursor: pointer;
+                }
+            </style>
+        </head>
+        <!-- main contain-->
+        <body>
+            <table>
+                <caption>ДАННЫЕ О СОТРУДНИКАХ</caption>
+                <tr class="head">
+                    <th>ФИО</th>
+                    <th>Пол</th>
+                    <th>Должность</th>
+                    <th>Дата рождения</th>
+                    <th>Данные_01</th>
+                    <th>Данные_02</th>
+                </tr>
+                <tr class="w">
+                    <th>Иванов Иван Иванович</th>
+                    <td>М</td>
+                    <td>Начальник</td>
+                    <td>01.01.1960</td>
+                    <td>4567</td>
+                    <td>3453</td>
+                </tr>
+                <tr class="g">
+                    <th>Петрова Илона Петровна</th>
+                    <td>Ж</td>
+                    <td>Секретарь</td>
+                    <td>01.01.1089</td>
+                    <td>98795</td>
+                    <td>46523</td>
+                </tr>
+                <tr class="w">
+                    <th>Сидоров Илья Игоревич</th>
+                    <td>М</td>
+                    <td>Бухгалтер</td>
+                    <td>01.01.1979</td>
+                    <td>743434</td>
+                    <td>33333</td>
+                </tr>
+                <tr class="g">
+                    <th>Пупин Фёдор Фёдорович</th>
+                    <td>М</td>
+                    <td>Водитель</td>
+                    <td>01.01.1963</td>
+                    <td>5555</td>
+                    <td>65987</td>
+                </tr>
+                <tr class="w">
+                    <th>Крупин Сергей Иванович</th>
+                    <td>М</td>
+                    <td>Водитель 2</td>
+                    <td>01.01.1983</td>
+                    <td>266598777</td>
+                    <td>12325698</td>
+                </tr>
+            </table>
+        </body>
+    </html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <title>TABLE</title>
+            <style>
+                table{
+                    border-collapse: collapse;
+                    border: 5px solid black;
+                    table-layout: fixed;
+                    text-align: center;
+                    vertical-align: middle;
+                    counter-reset: a 65;
+                }
+                table tr td{
+                    counter-increment: start;
+                }
+                table tr td::before{
+                    content: counter(a);
+                    counter-increment: a -1;
+                    font-size: 60px;
+                    font-weight: bold;
+                }
+                table tr:nth-child(odd) td:nth-child(even),
+                table tr:nth-child(even) td:nth-child(odd) {
+                    background: #000;
+                    width: 100px;
+                    height: 100px;
+                    color: white;
+                }
+            </style>
+        </head>
+        <!-- main contain-->
+        <body>
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </body>
+    </html>
